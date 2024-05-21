@@ -1,0 +1,49 @@
+﻿
+    <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="dark" Color="#33393D"/>
+    <SolidColorBrush x:Key="lemon" Color="#FFCD24"/>
+    <SolidColorBrush x:Key="blue" Color="#2AABE4"/>
+    <SolidColorBrush x:Key="light_blue" Color="#9DC8E4"/>
+    <SolidColorBrush x:Key="gray" Color="#666B6E"/>
+    <!--<SolidColorBrush x:Key="dark" Color="#010135"/>
+    <SolidColorBrush x:Key="lemon" Color="#eeebc2"/>
+    <SolidColorBrush x:Key="blue" Color="#01528a"/>
+    <SolidColorBrush x:Key="light_blue" Color="#0096d3"/>
+    <SolidColorBrush x:Key="gray" Color="#c7bfaa"/>-->
+
+
+    <Style x:Key="base_window" TargetType="Window">
+        <Setter Property="Width" Value="800"/>
+        <Setter Property="Height" Value="600"/>
+    </Style>
+    <Style x:Key="base_page" TargetType="Page">
+
+        <Setter Property="Background" Value="{DynamicResource blue}"/>
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="Foreground" Value="{DynamicResource lemon}"/>
+    </Style>
+    <Style TargetType="MenuItem">
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="120"/>
+        <Setter Property="Background" Value="{DynamicResource light_blue}"/>
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Foreground" Value="{DynamicResource dark}"/>
+    </Style>
+    <Style x:Key="header_column" TargetType="DataGridColumnHeader">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter  Property="FontWeight" Value="Bold"/>
+    </Style>
+    <Style x:Key="button_start_page"  TargetType="Button" >
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Height" Value="120"/>
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="{DynamicResource dark}"/>
+        <Setter Property="BorderBrush" Value="White"/>
+
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,65 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AirSystemApp.Pages"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="AirSystemApp.Pages.StartPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StartPage">
+
+    <Grid Background="{DynamicResource blue}">
+        <!--<Image HorizontalAlignment="Left" Height="100" Margin="331,32,0,0" VerticalAlignment="Top" Width="100" Source="/AirSystemApp;component/Resourses/logo.png"/>-->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnServiceType"  Style="{DynamicResource button_start_page}" Grid.Row="1" Grid.Column="0" Click="BtnServiceType_Click">
+            <StackPanel>
+                <TextBlock Text="ВИДЫ СЕРВИСОВ" HorizontalAlignment="Center"/>
+                <materialDesign:PackIcon Kind="Category" Foreground="#FFFFFF" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="60" Width="60" />
+            </StackPanel>
+        </Button>
+        <Button  x:Name="btnServices"  Style="{DynamicResource button_start_page}" Grid.Row="1" Grid.Column="1" Click="BtnServices_Click">
+            <StackPanel>
+                <TextBlock Text="СЕРВИСЫ" HorizontalAlignment="Center"/>
+                <materialDesign:PackIcon HorizontalAlignment="Center" Kind="ServiceToolbox" Foreground="#FFFFFF" VerticalAlignment="Center" Height="60" Width="60"/>
+            </StackPanel>
+        </Button>
+        <Button  x:Name="btnClients"  Style="{DynamicResource button_start_page}" Grid.Row="2" Grid.Column="0" Click="BtnClients_Click">
+            <StackPanel>
+                <TextBlock Text="КЛИЕНТЫ" HorizontalAlignment="Center" />
+                <materialDesign:PackIcon Kind="ManMan" HorizontalAlignment="Center" Foreground="#FFFFFF" VerticalAlignment="Center" Height="60" Width="60"/>
+            </StackPanel>
+        </Button>
+        <Button  x:Name="btnStatus"  Style="{DynamicResource button_start_page}" Grid.Row="2" Grid.Column="1" Click="BtnStatus_Click">
+
+            <StackPanel>
+                <TextBlock Text="СТАТУСЫ" HorizontalAlignment="Center"/>
+                <materialDesign:PackIcon Kind="StateMachine" HorizontalAlignment="Center" Foreground="#FFFFFF" VerticalAlignment="Center" Height="60" Width="60"/>
+            </StackPanel>
+        </Button>
+        <Button   x:Name="btnAirCond"  Style="{DynamicResource button_start_page}" Grid.Row="3" Grid.Column="0" Click="BtnAirCond_Click">
+            <StackPanel>
+                <TextBlock Text="КОНДИЦИОНЕРЫ" HorizontalAlignment="Center"/>
+                <materialDesign:PackIcon Kind="AirConditioner" Foreground="#FFFFFF"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="60" Width="60"/>
+            </StackPanel>
+        </Button>
+        <Button   x:Name="btnOrders" Style="{DynamicResource button_start_page}" Grid.Row="3" Grid.Column="1" Click="BtnOrders_Click">
+            <StackPanel>
+                <TextBlock Text="ЗАЯВКИ" HorizontalAlignment="Center"/>
+                <materialDesign:PackIcon Kind="OrderBoolAscending" HorizontalAlignment="Center" Foreground="#FFFFFF" VerticalAlignment="Center" Height="60" Width="60"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Page>

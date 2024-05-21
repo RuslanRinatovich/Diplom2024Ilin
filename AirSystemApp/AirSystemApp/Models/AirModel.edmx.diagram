@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="83c488e075414f4fa6bfbe7d08195579" Name="Diagram1" ZoomLevel="93">
+        <EntityTypeShape EntityType="AirDBModel.Air" Width="1.5" PointX="7.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirDBModel.AirOrder" Width="1.5" PointX="5.375" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirDBModel.Client" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirDBModel.Order" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirDBModel.Service" Width="1.5" PointX="7" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirDBModel.ServiceCategory" Width="1.5" PointX="9" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirDBModel.ServiceOrder" Width="1.5" PointX="4.625" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirDBModel.Status" Width="1.5" PointX="1.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirDBModel.sysdiagram" Width="1.5" PointX="10.5" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="AirDBModel.FK_AirOrder_Air" ManuallyRouted="false" />
+        <AssociationConnector Association="AirDBModel.FK_AirOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="AirDBModel.FK_Order_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="AirDBModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="AirDBModel.FK_ServiceOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="AirDBModel.FK_Service_ServiceCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="AirDBModel.FK_ServiceOrder_Service" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
